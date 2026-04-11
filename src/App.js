@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import NovaPage from './nova/components/NovaPage';
 import FrutasPage from './frutas/FrutasPage';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (

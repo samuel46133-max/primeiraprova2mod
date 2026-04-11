@@ -22,7 +22,7 @@ const NovaPage = props => {
   return (
     <div>
         <h1>Novo Produto</h1>
-        <Form>
+        <form>
             <input label="nome" id="name" name="name" onChange={""}/>
             <input label="Descrição" id="desc" name="desc" onChange={""}/>
             <input label="Preço" id="preco" name="prico" onChange={""}/>
@@ -31,7 +31,7 @@ const NovaPage = props => {
                 Submeter 
             </button>
         </hr>
-        </Form>
+        </form>
     </div>
   )
 }

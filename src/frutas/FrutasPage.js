@@ -5,7 +5,7 @@ import api from '../utils/api'
 const FrutasPage = props => {
     const [listaFrutas,setFrutas] = React.useState([])
 
-    const loadProducts = () => {
+    const loadFrutas = () => {
         api.get('/frutas')
             .then(res => setFrutas(res.data))
 
