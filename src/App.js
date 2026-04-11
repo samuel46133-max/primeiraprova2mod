@@ -1,23 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import NovaPage from './nova/components/NovaPage';
+import FrutasPage from './frutas/FrutasPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <div>
+          <Link to="/new">Nova Fruta</Link>
+          <Link to="/new">Novo Fruta</Link>
+          <Link to="/new">Todas as Frutas</Link>
+        </div>
+
+        <Routes>
+          <Route path="/" element={<navigate to="/new" replace/>}/>
+          <Route path="/new" element={<NovaPage/>}/>
+          <Route path="/all" element={<FrutasPage/>}/>
+
+        </Routes>
+
+      </Router>
+
     </div>
   );
 }
